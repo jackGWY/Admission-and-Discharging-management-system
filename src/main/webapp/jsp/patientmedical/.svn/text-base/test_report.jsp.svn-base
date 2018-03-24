@@ -1,0 +1,121 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<c:set var="ctx" scope="page" value="${pageContext.request.contextPath}"></c:set>
+
+<script type="text/javascript">
+	reloadjs("assets/js/amazeui.min.js");
+	
+/* 	$("#btn-add") */
+</script>
+
+    <div>检验报告<br></div>
+
+<div class="row-content am-cf">
+<div style="padding-left: 10px;">
+		<div class="am-u-sm-12 am-u-md-4 am-u-lg-3">
+			<div class="widget am-cf">
+				<div class="widget-head am-cf">
+					<div class="widget-title am-fl">基本信息类型列表</div>
+					<div class="widget-function am-fr">
+						<a href="javascript:;" class="am-icon-cog"></a>
+					</div>
+				</div>
+				<div class="widget-body  widget-body-lg am-fr">
+					<ul class="am-list admin-sidebar-list" id="collapase-nav-1">
+						<li class="am-panel"><a href="#/"> <i
+								class="am-icon-user am-margin-left-sm"></i>营销脚本
+						</a></li>
+						<li class="am-panel"><a href="#/"> <i
+								class="am-icon-user am-margin-left-sm"></i>营销方案
+						</a></li>
+						<li class="am-panel"><a href="#/"> <i
+								class="am-icon-user am-margin-left-sm"></i>营销案例
+						</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="am-u-sm-12 am-u-md-8 am-u-lg-9">
+			<div class="widget am-cf">
+				<div class="widget-head am-cf">
+					<div class="widget-title am-fl">基本信息类型列表</div>
+					<div class="widget-function am-fr">
+						<a href="javascript:;" class="am-icon-cog"></a>
+					</div>
+				</div>
+				<div class="row" style="margin-left: 10px">
+						<input type="button" id="btn-add" class="am-btn" value="新增">
+						<input type="button" class="am-btn" value="修改"> <input
+							type="button" class="am-btn" value="删除"> <input
+							type="button" class="am-btn" value="查看"> 
+					</div>
+				<table style="width: 100%"
+					class="am-table am-table-striped am-table-bordered am-table-compact">
+					<thead>
+						<tr>
+							<th style="width: 15%">类型名称</th>
+							<th style="width: 15%">状态时间</th>
+							<th style="width: 15%">扩展信息支持</th>
+							<th style="width: 15%">上级基本类型</th>
+							<th style="width: 15%">配置扩展类型</th>
+						</tr>
+					</thead>
+
+				</table>
+				
+				 <form method="post" class="am-form am-form-horizontal">
+						<fieldset>
+						<div class="am-form-group">
+							 	<label for="doc-ipt-４" class="am-u-sm-4 am-u-md-2 am-form-label">基本信息类型</label>
+								<div class="am-u-sm-8 am-u-md-4">
+									<div class="am-u-sm-10">
+										<input type="text" class="am-form-field tpl-form-no-bg"
+										 readonly="readonly">
+									</div>
+								</div>
+								<label for="doc-ipt-４" class="am-u-sm-4 am-u-md-2 am-form-label">类型名称</label>
+								<div class="am-u-sm-8 am-u-md-4">
+									<div class="am-u-sm-10">
+										<input type="text" class="am-form-field tpl-form-no-bg">
+									</div>
+								</div>
+							</div>
+							<div class="am-form-group">
+							 	<label for="doc-ipt-４" class="am-u-sm-4 am-u-md-2 am-form-label">扩展信息支持</label>
+								<div class="am-u-sm-8 am-u-md-4">
+									<div class="am-u-sm-10">
+										<select>
+										    <option>测试一</option>
+										     <option>测试二</option>
+										</select>
+									</div>
+								</div>
+								<label for="doc-ipt-４" class="am-u-sm-4 am-u-md-2 am-form-label">上级基本类型</label>
+								<div class="am-u-sm-8 am-u-md-4">
+									<div class="am-u-sm-10">
+										<input type="text" class="am-form-field tpl-form-no-bg"
+											 readonly="readonly">
+									</div>
+								</div>
+							</div>
+						<div class="am-form-group"  style="display: none">
+								<div class="am-u-sm-9 am-u-sm-push-3" >
+									<button type="button" id="btn-info-save"
+										class="am-btn am-btn-primary tpl-btn-bg-color-success ">保存</button>
+									<button type="button"
+										class="am-btn am-btn-primary tpl-btn-bg-color-success ">返回</button>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				
+			</div>
+		</div>
+
+	</div>
+</div>
+

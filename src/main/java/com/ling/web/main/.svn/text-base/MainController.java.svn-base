@@ -1,0 +1,122 @@
+package com.ling.web;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
+import com.ling.entity.Doctor;
+import com.ling.service.IDoctorService;
+
+@Controller
+@RequestMapping("main")
+public class MainController {
+	
+	@Autowired 
+	private IDoctorService iDoctorService;
+	
+	
+	@ResponseBody//ajax----转换成json格式
+	@RequestMapping("login")
+	public ModelAndView login(Doctor doctor){//   登陆	-------登陆	
+		EntityWrapper<Doctor> DoctorEw =new EntityWrapper<Doctor>();
+		DoctorEw.setSqlSelect("name,password");
+		DoctorEw.where("name = {0}", doctor.getName());
+		DoctorEw.and("password = {0}", doctor.getName());
+	
+		Doctor vo =iDoctorService.selectOne(doctor);		
+		if(vo != null){
+				ModelAndView mv=new ModelAndView("/main/main");
+				mv.addObject("name",vo.getName());
+				return mv;
+		}		
+		ModelAndView mv=new ModelAndView("/main/login");
+		return mv;
+	}
+	
+	@RequestMapping("advice_menu")
+	public String advice_menu(){//   病历---菜单jsp		
+		return "/advice/advice_menu";
+	}
+	
+	@RequestMapping("advice_base")
+	public String advice_base(){//	  病历---	基础信息jsp
+		return"/advice/base";
+	}
+	
+	@RequestMapping("advice_allergy")
+	public String advice_allergy(){//	  病历---	过敏信息jsp
+		return"/advice/allergy";
+	}
+	
+	@RequestMapping("advice_medical")
+	public String advice_medical(){//	  病历---	病历jsp
+		return"/advice/medical";
+	}
+	
+	@RequestMapping("advice_diagnosis")
+	public String advice_diagnosis(){//	  病历---	诊断jsp
+		return"/advice/diagnosis";
+	}
+	
+	@RequestMapping("advice_advice")
+	public String advice_advice(){//	  病历---	医嘱jsp
+		return"/advice/advice";
+	}
+	
+	@RequestMapping("advice_disease")
+	public String advice_disease(){//	  病历---	病程记录jsp
+		return"/advice/disease";
+	}
+	
+	@RequestMapping("advice_test_apply")
+	public String advice_test_apply(){//	  病历---	检验申请jsp
+		return"/advice/test_apply";
+	}
+		
+	@RequestMapping("advice_check_apply")
+	public String advice_check_apply(){//	  病历---	检查申请jsp
+		return"/advice/check_apply";
+	}
+	
+	@RequestMapping("advice_operation")
+	public String advice_operation(){//	  病历---	手术jsp
+		return"/advice/operation";
+	}
+	
+	@RequestMapping("advice_test_report")
+	public String advice_test_report(){//	  病历---	检查报告jsp
+		return"/advice/test_report";
+	}
+
+	@RequestMapping("advice_check_report")
+	public String advice_check_report(){//	  病历---	检验报告jsp
+		return"/advice/check_report";
+	}
+	@RequestMapping("inpatient_menu")
+	public String inpatient_menu(){//   留观---菜单jsp		
+		return"/inpatient/inpatient_menu";
+	}
+	
+	@RequestMapping("rescue_menu")
+	public String rescue_menu(){//   抢救---菜单jsp	
+		return"/rescue/rescue_menu";
+	}
+	
+	@RequestMapping("maintenance_menu")
+	public String maintenance_menu(){//   使用维护---菜单jsp	
+		return"/maintenance/maintenance_menu";
+	}
+	
+	@RequestMapping("department_menu")
+	public String department_menu(){//   科室管理---菜单jsp	
+		return"/department/department_menu";
+	}
+	
+	@RequestMapping("system_menu")
+	public String system_menu(){//   系统管理---菜单jsp	
+		return"/system/system_menu";
+	}	
+}

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/iHealth/!svn/ver/9/%E6%BA%90%E4%BB%A3%E7%A0%81/WebRoot/jsp/advice
+END
+operation.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/iHealth/!svn/ver/10/%E6%BA%90%E4%BB%A3%E7%A0%81/WebRoot/jsp/advice/operation.jsp
+END
+check_apply.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/iHealth/!svn/ver/10/%E6%BA%90%E4%BB%A3%E7%A0%81/WebRoot/jsp/advice/check_apply.jsp
+END
+advice.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/iHealth/!svn/ver/10/%E6%BA%90%E4%BB%A3%E7%A0%81/WebRoot/jsp/advice/advice.jsp
+END
+check_report.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/iHealth/!svn/ver/10/%E6%BA%90%E4%BB%A3%E7%A0%81/WebRoot/jsp/advice/check_report.jsp
+END
+disease.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/iHealth/!svn/ver/10/%E6%BA%90%E4%BB%A3%E7%A0%81/WebRoot/jsp/advice/disease.jsp
+END
+allergy.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/iHealth/!svn/ver/10/%E6%BA%90%E4%BB%A3%E7%A0%81/WebRoot/jsp/advice/allergy.jsp
+END
+test_apply.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/iHealth/!svn/ver/10/%E6%BA%90%E4%BB%A3%E7%A0%81/WebRoot/jsp/advice/test_apply.jsp
+END
+base.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/iHealth/!svn/ver/11/%E6%BA%90%E4%BB%A3%E7%A0%81/WebRoot/jsp/advice/base.jsp
+END
+test_report.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/iHealth/!svn/ver/10/%E6%BA%90%E4%BB%A3%E7%A0%81/WebRoot/jsp/advice/test_report.jsp
+END
+medical.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/iHealth/!svn/ver/10/%E6%BA%90%E4%BB%A3%E7%A0%81/WebRoot/jsp/advice/medical.jsp
+END
+diagnosis.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/iHealth/!svn/ver/10/%E6%BA%90%E4%BB%A3%E7%A0%81/WebRoot/jsp/advice/diagnosis.jsp
+END
+advice_menu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/iHealth/!svn/ver/11/%E6%BA%90%E4%BB%A3%E7%A0%81/WebRoot/jsp/advice/advice_menu.jsp
+END

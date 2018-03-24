@@ -1,0 +1,68 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<c:set value="${pageContext.request.contextPath }" scope="page"
+	var="ctx"></c:set>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head lang="en">
+<title>海泰电子病历系统</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="stylesheet" href="${ctx}/assets/css/amazeui.min.css" />
+<script src="${ctx}/assets/js/jquery.min.js"></script>
+<style type="text/css">
+.header {
+	text-align: center;
+}
+
+.header h1 {
+	font-size: 200%;
+	color: #333;
+	margin-top: 30px;
+}
+
+.header p {
+	font-size: 14px;
+}
+
+.am-g p {
+	text-align: center;
+}
+</style>
+
+</head>
+<body>
+	<div class="header">
+		<div class="am-g">
+			<h1>海 泰 电 子 病 历 系 统</h1>
+		</div>
+		<hr />
+	</div>
+	<div class="am-g">
+		<div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
+			<h1 align="center">登录</h1>
+			<hr>
+			<form method="post" action="${ctx}/main/login.do" class="am-form">
+				<label for="email">用户名:</label> 
+				<input type="text" class="am-form-field am-round" name="name" placeholder="请输入用户名" />
+				<br> 
+				<label for="password">密码:</label> 
+				<input type="password" class="am-form-field am-round" name="password" placeholder="请输入密码" />
+				<br>
+				<div class="am-cf">
+					<input type="submit" value="登 录" class="am-btn am-btn-primary am-btn-sm am-fl"> 
+					<input type="button" value="忘记密码 ^_^? "class="am-btn am-btn-default am-btn-sm am-fr">
+				</div>
+			</form>
+			<hr>
+			<br /> <br /> <br />
+			<p>© 2016海泰电子病历系统</p>
+		</div>
+	</div>
+</body>
+</html>
